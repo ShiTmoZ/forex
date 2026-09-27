@@ -1,0 +1,33 @@
+name: Multi-Asset Historical Training & Backtest (2020-2026)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - "strategy.py"
+      - "train_backtest_all.py"
+      - "config.py"
+
+jobs:
+  run-backtest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run Multi-Asset 2020-2026 Backtest
+        run: |
+          python train_backtest_all.py
+
+      - name: Upload Backtest Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: multi-asset-backtest-report
+          path: multi_asset_backtest_report.json
