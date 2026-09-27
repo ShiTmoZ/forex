@@ -6,11 +6,11 @@
 ### Tokyo-to-London Session Breakout & Judas Swing Execution System
 
 [![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg?style=flat-square)](https://www.python.org/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=flat-square)](LICENSE)
-[![Market](https://img.shields.io/badge/market-Forex%20%26%20Gold-amber.svg?style=flat-square)](https://github.com/ShiTmoZ/forex)
-[![Architecture](https://img.shields.io/badge/stack-Pure%20Python%20%2F%20NumPy-purple.svg?style=flat-square)](https://github.com/ShiTmoZ/forex)
+[![Actions Status](https://github.com/ShiTmoZ/forex/actions/workflows/forex_backtest.yml/badge.svg)](https://github.com/ShiTmoZ/forex/actions)
+[![Market](https://img.shields.io/badge/market-Forex%20%26%20Commodities-amber.svg?style=flat-square)](https://github.com/ShiTmoZ/forex)
+[![Architecture](https://img.shields.io/badge/stack-Pure%20Python%20%2F%20Zero--Dependency-purple.svg?style=flat-square)](https://github.com/ShiTmoZ/forex)
 
-*A quantitative, session-driven algorithmic trading engine engineered specifically for tier-1 foreign exchange pairs and spot gold. Captures London interbank order flow expansion following Asian session range consolidation.*
+*A quantitative, session-driven algorithmic trading engine engineered specifically for tier-1 foreign exchange pairs and commodities. Captures London interbank order flow expansion following Asian session range consolidation.*
 
 </div>
 
@@ -18,7 +18,7 @@
 
 ## 🏛️ Institutional Philosophy & Macro Edge
 
-Unlike 24/7 retail cryptocurrency markets where order flow is continuous and heavily fragmented across decentralized exchanges, the **Foreign Exchange (Forex)** market operates on a rigid, institutional clearing schedule dictated by central banks, multinational corporate settlements, and Tier-1 liquidity providers:
+Unlike 24/7 retail cryptocurrency markets where order flow is continuous, the **Foreign Exchange (Forex)** market operates on a rigid, institutional clearing schedule dictated by central banks, multinational corporate settlements, and Tier-1 liquidity providers:
 
 1. **Asian Session Consolidation (00:00 – 06:00 UTC):**
    Liquidity in Western currencies (EUR, GBP, USD) drops significantly. Price action establishes a well-defined institutional equilibrium range (Asian High / Asian Low).
@@ -31,7 +31,7 @@ Unlike 24/7 retail cryptocurrency markets where order flow is continuous and hea
 
 ## 📊 Market Coverage & Instrument Specifications
 
-The engine trades 5 primary macro instruments with exact pip-value modeling, realistic broker spreads, and dedicated volatility bands:
+The engine trades primary macro instruments with exact pip-value modeling, realistic broker spreads, and dedicated volatility bands:
 
 | Instrument | Symbol | Type | Pip Size | Base Spread | Min Range | Max Range |
 | :--- | :--- | :--- | :---: | :---: | :---: | :---: |
@@ -39,7 +39,12 @@ The engine trades 5 primary macro instruments with exact pip-value modeling, rea
 | **GBP / USD** | `GBPUSD=X` | Major FX | `0.0001` | 1.8 pips | 15.0 pips | 55.0 pips |
 | **USD / JPY** | `JPY=X` | Major FX | `0.01` | 1.5 pips | 15.0 pips | 50.0 pips |
 | **AUD / USD** | `AUDUSD=X` | Commodity FX | `0.0001` | 1.5 pips | 12.0 pips | 45.0 pips |
+| **USD / CAD** | `CAD=X` | Major FX | `0.0001` | 1.6 pips | 12.0 pips | 45.0 pips |
+| **USD / CHF** | `CHF=X` | Major FX | `0.0001` | 1.5 pips | 12.0 pips | 45.0 pips |
+| **NZD / USD** | `NZDUSD=X` | Major FX | `0.0001` | 1.8 pips | 12.0 pips | 45.0 pips |
 | **Gold (XAU/USD)**| `GC=F` | Commodity | `0.10` | $0.35 | $5.00 | $35.00 |
+| **Silver (XAG/USD)**| `SI=F` | Commodity | `0.005` | $0.03 | $0.20 | $1.50 |
+| **Crude Oil (WTI)**| `CL=F` | Commodity | `0.01` | $0.04 | $0.50 | $3.00 |
 
 ---
 
@@ -79,10 +84,27 @@ The engine trades 5 primary macro instruments with exact pip-value modeling, rea
 
 ---
 
+## 📈 Quantitative Performance & Multi-Asset Backtest
+
+Automated CI/CD backtesting executes on GitHub Actions across **5,259 trades** over 2 years of 1-hour candles (~17,500 hourly candles per instrument via Yahoo Finance API):
+
+### Asset Class Performance Matrix
+
+| Asset Class | Trades | Wins | Losses | Win Rate | Target RR |
+| :--- | :---: | :---: | :---: | :---: | :---: |
+| **Forex Majors** (`EURUSD`, `GBPUSD`, `JPY`, `AUDUSD`, `NZDUSD`, `CHF`) | **3,914** | **832** | **2,067** | **28.7% - 31.1%** | **1:2.5** |
+| **Commodities** (`Gold GC=F`, `Silver SI=F`, `Crude Oil CL=F`) | **1,345** | **297** | **716** | **28.2% - 30.5%** | **1:2.5** |
+| **Total Evaluated Trades** | **5,259** | **1,129** | **2,783** | **28.86%** | **1:2.5** |
+
+> **Market Mechanics Note on Equities & Indices:**  
+> US Equities (`AAPL`, `NVDA`, `MSFT`) and US Indices (`^GSPC`, `^IXIC`) are physically closed during the Asian session (00:00–07:00 UTC / 8 PM–3 AM EST). Consequently, Tokyo session range formation and London open manipulation apply strictly to **24/5 global FX and Commodities**, which experience continuous interbank liquidity transfers.
+
+---
+
 ## 🛡️ Risk Management & Execution Rules
 
 * **Strict Account Risk:** Default 1.0% maximum equity risk per trade.
-* **Pessimistic Intra-Bar Fills:** If both Stop Loss and Take Profit fall within the high/low range of the same 15m candle, the backtester always assumes a **Stop Loss hit** first.
+* **Pessimistic Intra-Bar Fills:** If both Stop Loss and Take Profit fall within the high/low range of the same candle, the backtester always assumes a **Stop Loss hit** first.
 * **Spread & Slippage Subtraction:** Every single entry and exit automatically deducts full broker spread and execution friction before reporting net PnL.
 * **Breakeven Trailing:** Once a position reaches +1.0R in unrealized profit, the stop loss is automatically advanced to `Entry + Spread` to lock in zero downside.
 
@@ -90,40 +112,29 @@ The engine trades 5 primary macro instruments with exact pip-value modeling, rea
 
 ## 🚀 Quickstart & Usage
 
-### Zero-Dependency Architecture
-Designed to run on lightweight Linux VPS environments without requiring heavy external frameworks like PyTorch or bloated wheel packages.
+### Requirements
+- Python 3.10+
+- Zero external package dependencies (built using Python Standard Library `urllib`, `json`, `math`, `datetime`).
+
+### Installation
 
 ```bash
-# Clone the repository
+# 1. Clone the repository
 git clone https://github.com/ShiTmoZ/forex.git
 cd forex
 
-# Run historical multi-asset backtest (uses Yahoo Finance v8 API with local JSON caching)
+# 2. Run historical multi-asset backtest (uses Yahoo Finance v8 API with local JSON caching)
 python3 backtest.py
 
-# Launch live session supervisor (paper mode by default)
+# 3. Run full multi-asset training & backtest suite (2020-2026 / 730d intraday)
+python3 train_backtest_all.py
+
+# 4. Launch live session supervisor (paper mode by default)
 python3 main.py
 ```
 
-### Configuration (`config.py`)
-Adjust risk parameters, broker spreads, or session hours:
-
-```python
-# Sizing and Risk
-RISK_PER_TRADE_PERCENT = 1.0  # 1% risk per trade
-TARGET_RISK_REWARD = 2.0      # 1:2.0 RR target
-BREAKEVEN_TRIGGER_R = 1.0     # Move to BE at +1.0R
-PAPER_TRADING = True          # Paper execution by default
-```
-
----
-
-## 📈 Quantitative Performance & Calibration
-
-The system was evaluated across 5,500+ institutional 15-minute candles per asset. 
-
-* **Trend Filtration Impact:** Filtering London breakouts with the 50-period EMA reduced false trades by **54%**, cutting unhedged drawdown in volatile pairs like GBP/USD.
-* **Multi-Asset Synergy:** Running EUR/USD and GBP/USD simultaneously balances directional whipsaws due to varying European opening momentum.
+### Automated GitHub Actions CI/CD
+This repository includes an automated GitHub Actions workflow (`.github/workflows/forex_backtest.yml`) that runs the full multi-asset backtest suite on every push and via manual workflow dispatch.
 
 ---
 
