@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0d111a"/>
+      <stop offset="100%" stop-color="#05070a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#1D4ED8"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161b26"/>
+      <stop offset="100%" stop-color="#0f131c"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="420" fill="url(#bg)"/>
+
+  <!-- Subtle Grid Lines -->
+  <g opacity="0.05" stroke="#FFFFFF" stroke-width="1">
+    <line x1="0" y1="70" x2="1200" y2="70"/>
+    <line x1="0" y1="140" x2="1200" y2="140"/>
+    <line x1="0" y1="210" x2="1200" y2="210"/>
+    <line x1="0" y1="280" x2="1200" y2="280"/>
+    <line x1="0" y1="350" x2="1200" y2="350"/>
+    <line x1="200" y1="0" x2="200" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="600" y1="0" x2="600" y2="420"/>
+    <line x1="800" y1="0" x2="800" y2="420"/>
+    <line x1="1000" y1="0" x2="1000" y2="420"/>
+  </g>
+
+  <!-- Top Badges -->
+  <rect x="50" y="35" width="130" height="26" rx="13" fill="#1E293B"/>
+  <text x="115" y="52" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">INSTITUTIONAL</text>
+
+  <rect x="190" y="35" width="140" height="26" rx="13" fill="#1E293B"/>
+  <text x="260" y="52" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="1">FOREX &amp; COMMODITIES</text>
+
+  <!-- Main Title -->
+  <text x="50" y="110" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">
+    Tokyo-to-London Institutional Engine
+  </text>
+  <text x="50" y="145" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400">
+    Asian Range Consolidation • London Interbank Fixing • EUR/USD, GBP/USD, USD/JPY, AUD/USD, XAU/USD
+  </text>
+
+  <!-- Metric Card 1: Session Model -->
+  <rect x="50" y="185" width="250" height="185" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="75" y="225" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1">SESSION TIMING</text>
+  <text x="75" y="275" fill="#38BDF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800">00:00 - 11:00</text>
+  <text x="75" y="310" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">UTC Institutional Flow</text>
+  <text x="75" y="340" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Tokyo Accumulation → London Fix</text>
+
+  <!-- Metric Card 2: Target Assets -->
+  <rect x="330" y="185" width="250" height="185" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="355" y="225" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1">MARKET COVERAGE</text>
+  <text x="355" y="275" fill="#F59E0B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800">5 Tier-1 Pairs</text>
+  <text x="355" y="310" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">FX Majors + Spot Gold</text>
+  <text x="355" y="340" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Pip-Precise Spread Accounting</text>
+
+  <!-- Metric Card 3: Execution Logic -->
+  <rect x="610" y="185" width="250" height="185" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="635" y="225" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1">EXECUTION REGIME</text>
+  <text x="635" y="275" fill="#10B981" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800">1:2.0 RR</text>
+  <text x="635" y="310" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Breakeven @ +1.0R</text>
+  <text x="635" y="340" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Pessimistic Intra-Bar Fills</text>
+
+  <!-- Metric Card 4: Architecture -->
+  <rect x="890" y="185" width="260" height="185" rx="14" fill="url(#cardBg)" stroke="#1E293B" stroke-width="1.5"/>
+  <text x="915" y="225" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" letter-spacing="1">SYSTEM STACK</text>
+  <text x="915" y="275" fill="#818CF8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800">Pure Python</text>
+  <text x="915" y="310" fill="#94A3B8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Zero External Bloat</text>
+  <text x="915" y="340" fill="#64748B" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Direct v8 Chart API Feed</text>
+</svg>
