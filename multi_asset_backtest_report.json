@@ -1,96 +1,96 @@
 {
-  "timestamp": "2026-09-27T19:06:15.586526+00:00",
-  "total_trades": 0,
-  "total_wins": 0,
-  "total_losses": 0,
-  "overall_win_rate": 0.0,
-  "total_net_r": 0.0,
+  "timestamp": "2026-09-27T19:09:17.226484+00:00",
+  "total_trades": 5259,
+  "total_wins": 1129,
+  "total_losses": 2783,
+  "overall_win_rate": 28.86,
+  "total_net_r": -525.0,
   "categories": {
     "Forex_Majors": {
-      "trades": 0,
-      "wins": 0,
-      "losses": 0,
-      "win_rate": 0.0,
-      "net_r": 0.0,
+      "trades": 3914,
+      "wins": 832,
+      "losses": 2067,
+      "win_rate": 28.7,
+      "net_r": -403.0,
       "symbols": {
         "EURUSD=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 548,
+          "wins": 124,
+          "losses": 280,
+          "win_rate": 30.69,
+          "net_r": -32.0
         },
         "GBPUSD=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 567,
+          "wins": 124,
+          "losses": 323,
+          "win_rate": 27.74,
+          "net_r": -75.0
         },
         "JPY=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 528,
+          "wins": 102,
+          "losses": 251,
+          "win_rate": 28.9,
+          "net_r": -47.0
         },
         "AUDUSD=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 542,
+          "wins": 103,
+          "losses": 270,
+          "win_rate": 27.61,
+          "net_r": -64.0
         },
         "CAD=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 628,
+          "wins": 134,
+          "losses": 392,
+          "win_rate": 25.48,
+          "net_r": -124.0
         },
         "CHF=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 586,
+          "wins": 138,
+          "losses": 314,
+          "win_rate": 30.53,
+          "net_r": -38.0
         },
         "NZDUSD=X": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 515,
+          "wins": 107,
+          "losses": 237,
+          "win_rate": 31.1,
+          "net_r": -23.0
         }
       }
     },
     "Commodities": {
-      "trades": 0,
-      "wins": 0,
-      "losses": 0,
-      "win_rate": 0.0,
-      "net_r": 0.0,
+      "trades": 1345,
+      "wins": 297,
+      "losses": 716,
+      "win_rate": 29.32,
+      "net_r": -122.0,
       "symbols": {
         "GC=F": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 439,
+          "wins": 98,
+          "losses": 250,
+          "win_rate": 28.16,
+          "net_r": -54.0
         },
         "SI=F": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 446,
+          "wins": 93,
+          "losses": 212,
+          "win_rate": 30.49,
+          "net_r": -26.0
         },
         "CL=F": {
-          "trades": 0,
-          "wins": 0,
-          "losses": 0,
-          "win_rate": 0.0,
-          "net_r": 0.0
+          "trades": 460,
+          "wins": 106,
+          "losses": 254,
+          "win_rate": 29.44,
+          "net_r": -42.0
         }
       }
     },
@@ -106,49 +106,49 @@
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^IXIC": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^DJI": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^RUT": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^FTSE": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^GDAXI": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "^N225": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         }
       }
     },
@@ -164,350 +164,350 @@
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "MSFT": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "NVDA": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "AMZN": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "GOOGL": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "META": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "TSLA": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "AVGO": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "COST": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "PEP": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "ADBE": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "CSCO": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "NFLX": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "AMD": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "INTC": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "TXN": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "AMAT": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "QCOM": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "HON": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "AMGN": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "JPM": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "V": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "MA": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "BAC": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "WMT": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "PG": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "JNJ": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "UNH": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "HD": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "LLY": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "ABBV": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "MRK": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "KO": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "CVX": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "XOM": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "MCD": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "DIS": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "NKE": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "CAT": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "BA": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "GE": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "IBM": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "CRM": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "ORCL": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "NOW": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "PANW": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "UBER": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "ABNB": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "PLTR": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         },
         "SNOW": {
           "trades": 0,
           "wins": 0,
           "losses": 0,
           "win_rate": 0.0,
-          "net_r": 0.0
+          "net_r": 0
         }
       }
     }
