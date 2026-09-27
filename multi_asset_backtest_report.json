@@ -1,62 +1,62 @@
 {
-  "timestamp": "2026-09-27T19:09:17.226484+00:00",
-  "total_trades": 5259,
-  "total_wins": 1129,
-  "total_losses": 2783,
-  "overall_win_rate": 28.86,
-  "total_net_r": -525.0,
+  "timestamp": "2026-09-27T19:18:03.428498+00:00",
+  "total_trades": 5249,
+  "total_wins": 1119,
+  "total_losses": 2785,
+  "overall_win_rate": 28.66,
+  "total_net_r": -547.0,
   "categories": {
     "Forex_Majors": {
-      "trades": 3914,
-      "wins": 832,
-      "losses": 2067,
-      "win_rate": 28.7,
-      "net_r": -403.0,
+      "trades": 3913,
+      "wins": 830,
+      "losses": 2066,
+      "win_rate": 28.66,
+      "net_r": -406.0,
       "symbols": {
         "EURUSD=X": {
-          "trades": 548,
-          "wins": 124,
+          "trades": 547,
+          "wins": 123,
           "losses": 280,
-          "win_rate": 30.69,
-          "net_r": -32.0
+          "win_rate": 30.52,
+          "net_r": -34.0
         },
         "GBPUSD=X": {
-          "trades": 567,
-          "wins": 124,
+          "trades": 566,
+          "wins": 123,
           "losses": 323,
-          "win_rate": 27.74,
-          "net_r": -75.0
+          "win_rate": 27.58,
+          "net_r": -77.0
         },
         "JPY=X": {
-          "trades": 528,
-          "wins": 102,
-          "losses": 251,
-          "win_rate": 28.9,
-          "net_r": -47.0
+          "trades": 525,
+          "wins": 103,
+          "losses": 248,
+          "win_rate": 29.34,
+          "net_r": -42.0
         },
         "AUDUSD=X": {
-          "trades": 542,
+          "trades": 543,
           "wins": 103,
-          "losses": 270,
-          "win_rate": 27.61,
-          "net_r": -64.0
+          "losses": 271,
+          "win_rate": 27.54,
+          "net_r": -65.0
         },
         "CAD=X": {
-          "trades": 628,
-          "wins": 134,
+          "trades": 629,
+          "wins": 133,
           "losses": 392,
-          "win_rate": 25.48,
-          "net_r": -124.0
+          "win_rate": 25.33,
+          "net_r": -126.0
         },
         "CHF=X": {
-          "trades": 586,
+          "trades": 587,
           "wins": 138,
-          "losses": 314,
-          "win_rate": 30.53,
-          "net_r": -38.0
+          "losses": 315,
+          "win_rate": 30.46,
+          "net_r": -39.0
         },
         "NZDUSD=X": {
-          "trades": 515,
+          "trades": 516,
           "wins": 107,
           "losses": 237,
           "win_rate": 31.1,
@@ -65,32 +65,32 @@
       }
     },
     "Commodities": {
-      "trades": 1345,
-      "wins": 297,
-      "losses": 716,
-      "win_rate": 29.32,
-      "net_r": -122.0,
+      "trades": 1336,
+      "wins": 289,
+      "losses": 719,
+      "win_rate": 28.67,
+      "net_r": -141.0,
       "symbols": {
         "GC=F": {
-          "trades": 439,
-          "wins": 98,
-          "losses": 250,
-          "win_rate": 28.16,
-          "net_r": -54.0
+          "trades": 432,
+          "wins": 94,
+          "losses": 247,
+          "win_rate": 27.57,
+          "net_r": -59.0
         },
         "SI=F": {
-          "trades": 446,
-          "wins": 93,
-          "losses": 212,
-          "win_rate": 30.49,
-          "net_r": -26.0
+          "trades": 444,
+          "wins": 90,
+          "losses": 216,
+          "win_rate": 29.41,
+          "net_r": -36.0
         },
         "CL=F": {
           "trades": 460,
-          "wins": 106,
-          "losses": 254,
-          "win_rate": 29.44,
-          "net_r": -42.0
+          "wins": 105,
+          "losses": 256,
+          "win_rate": 29.09,
+          "net_r": -46.0
         }
       }
     },
