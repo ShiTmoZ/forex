@@ -41,12 +41,12 @@ ASSET_UNIVERSE = {
     ]
 }
 
-def fetch_historical_series(ticker, period1=1577836800, period2=1774900000, interval="1h"):
+def fetch_historical_series(ticker, range_val="730d", interval="1h"):
     """
-    Fetch multi-year historical candles using Yahoo Finance API without any external packages.
-    1577836800 corresponds to Jan 1, 2020.
+    Fetch historical candles using Yahoo Finance API without any external packages.
+    range=730d with interval=1h provides up to 17,500 intraday candles per asset (max allowed by Yahoo).
     """
-    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(ticker)}?period1={period1}&period2={period2}&interval={interval}&includePrePost=true"
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(ticker)}?range={range_val}&interval={interval}&includePrePost=true"
     req = urllib.request.Request(
         url,
         headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"}
